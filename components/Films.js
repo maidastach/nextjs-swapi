@@ -13,7 +13,7 @@ const Films = ( { films } ) =>
         if(!query)
             setMovies(films)
         setMovies(
-            prev => prev.filter(
+            prev => films.filter(
                 film => film.properties.title.toLowerCase().startsWith(query)
             )
         )
