@@ -9,7 +9,6 @@ const Films = ( { films } ) =>
 
     const searcher = event =>
     {
-        console.log(movies);
         const query = event.target.value.toLowerCase();
         if(!query)
             setMovies(films)
